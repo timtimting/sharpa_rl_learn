@@ -1,0 +1,83 @@
+[
+  {
+    "checkpoint": "logs/rotation_finetune/2026-09-25_23-24-22/stage1_nn/best.pth",
+    "steps": 1000,
+    "num_envs": 64,
+    "seed": 42,
+    "gravity_z_m_s2": -9.81,
+    "dynamics_randomization": {
+      "pd_gains": true,
+      "center_of_mass": true,
+      "mass": true
+    },
+    "completed_episodes": 138,
+    "height_terminations": 12,
+    "timeouts": 126,
+    "timeout_fraction": 0.9130434782608695,
+    "full_rotation_and_hold": 121,
+    "full_rotation_and_hold_fraction": 0.8768115942028986,
+    "mean_net_rotations_per_episode": 3.0890553535053216,
+    "mean_episode_reward": 355.45500216924626,
+    "mean_episode_steps": 373.1376811594203,
+    "mean_step_reward": 0.9600213766098022,
+    "mean_rewarded_target_angular_velocity_rad_s": 0.43306300044059753,
+    "mean_yaw_velocity_rad_s": 1.039052128791809,
+    "mean_integrated_yaw_velocity_rad_s": 1.036844253540039,
+    "mean_position_reward_per_step": 0.09339962154626846,
+    "mean_rotation_reward_per_step": 1.0826574563980103
+  },
+  {
+    "checkpoint": "logs/rotation_robust/2026-10-06_11-31-08/stage1_nn/best.pth",
+    "steps": 1000,
+    "num_envs": 64,
+    "seed": 42,
+    "gravity_z_m_s2": -9.81,
+    "dynamics_randomization": {
+      "pd_gains": true,
+      "center_of_mass": true,
+      "mass": true
+    },
+    "completed_episodes": 134,
+    "height_terminations": 8,
+    "timeouts": 126,
+    "timeout_fraction": 0.9402985074626866,
+    "full_rotation_and_hold": 124,
+    "full_rotation_and_hold_fraction": 0.9253731343283582,
+    "mean_net_rotations_per_episode": 3.3892784277693484,
+    "mean_episode_reward": 425.63364420986886,
+    "mean_episode_steps": 381.02985074626866,
+    "mean_step_reward": 1.1152676343917847,
+    "mean_rewarded_target_angular_velocity_rad_s": 0.46182340383529663,
+    "mean_yaw_velocity_rad_s": 1.1203596591949463,
+    "mean_integrated_yaw_velocity_rad_s": 1.1181206703186035,
+    "mean_position_reward_per_step": 0.10717929154634476,
+    "mean_rotation_reward_per_step": 1.1545578241348267
+  },
+  {
+    "checkpoint": "logs/rotation_robust/2026-10-06_11-31-08/stage1_nn/last.pth",
+    "steps": 1000,
+    "num_envs": 64,
+    "seed": 42,
+    "gravity_z_m_s2": -9.81,
+    "dynamics_randomization": {
+      "pd_gains": true,
+      "center_of_mass": true,
+      "mass": true
+    },
+    "completed_episodes": 135,
+    "height_terminations": 8,
+    "timeouts": 127,
+    "timeout_fraction": 0.9407407407407408,
+    "full_rotation_and_hold": 122,
+    "full_rotation_and_hold_fraction": 0.9037037037037037,
+    "mean_net_rotations_per_episode": 3.4147622459771627,
+    "mean_episode_reward": 421.79844664997523,
+    "mean_episode_steps": 380.0814814814815,
+    "mean_step_reward": 1.1130294799804688,
+    "mean_rewarded_target_angular_velocity_rad_s": 0.4529586434364319,
+    "mean_yaw_velocity_rad_s": 1.1354860067367554,
+    "mean_integrated_yaw_velocity_rad_s": 1.1332077980041504,
+    "mean_position_reward_per_step": 0.11148832738399506,
+    "mean_rotation_reward_per_step": 1.132396936416626
+  }
+]

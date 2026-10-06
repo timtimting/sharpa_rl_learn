@@ -1,0 +1,56 @@
+[
+  {
+    "checkpoint": "logs/rotation_finetune/2026-09-25_23-24-22/stage1_nn/best.pth",
+    "steps": 1000,
+    "num_envs": 64,
+    "seed": 42,
+    "gravity_z_m_s2": -9.81,
+    "dynamics_randomization": {
+      "pd_gains": false,
+      "center_of_mass": false,
+      "mass": false
+    },
+    "completed_episodes": 134,
+    "height_terminations": 6,
+    "timeouts": 128,
+    "timeout_fraction": 0.9552238805970149,
+    "full_rotation_and_hold": 127,
+    "full_rotation_and_hold_fraction": 0.9477611940298507,
+    "mean_net_rotations_per_episode": 4.050460641172527,
+    "mean_episode_reward": 429.1789384288574,
+    "mean_episode_steps": 381.64179104477614,
+    "mean_step_reward": 1.1208046674728394,
+    "mean_rewarded_target_angular_velocity_rad_s": 0.4759843349456787,
+    "mean_yaw_velocity_rad_s": 1.3293637037277222,
+    "mean_integrated_yaw_velocity_rad_s": 1.326477289199829,
+    "mean_position_reward_per_step": 0.09182731062173843,
+    "mean_rotation_reward_per_step": 1.189960241317749
+  },
+  {
+    "checkpoint": "logs/rotation_robust/2026-10-06_11-31-08/stage1_nn/best.pth",
+    "steps": 1000,
+    "num_envs": 64,
+    "seed": 42,
+    "gravity_z_m_s2": -9.81,
+    "dynamics_randomization": {
+      "pd_gains": false,
+      "center_of_mass": false,
+      "mass": false
+    },
+    "completed_episodes": 131,
+    "height_terminations": 3,
+    "timeouts": 128,
+    "timeout_fraction": 0.9770992366412213,
+    "full_rotation_and_hold": 127,
+    "full_rotation_and_hold_fraction": 0.9694656488549618,
+    "mean_net_rotations_per_episode": 4.022584791954647,
+    "mean_episode_reward": 481.35676385064164,
+    "mean_episode_steps": 389.9389312977099,
+    "mean_step_reward": 1.2299541234970093,
+    "mean_rewarded_target_angular_velocity_rad_s": 0.4852432310581207,
+    "mean_yaw_velocity_rad_s": 1.2952539920806885,
+    "mean_integrated_yaw_velocity_rad_s": 1.2926276922225952,
+    "mean_position_reward_per_step": 0.132803812623024,
+    "mean_rotation_reward_per_step": 1.213107705116272
+  }
+]

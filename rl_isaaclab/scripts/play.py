@@ -20,6 +20,7 @@ parser.add_argument("--load_path", type=str, default=None, help="Checkpoint path
 parser.add_argument("--max_agent_steps", type=int, default=None, help="RL Policy training iterations.")
 parser.add_argument("--algorithm", type=str, default=None, help="Run training with multiple GPUs or nodes.")
 parser.add_argument("--resume", action="store_true", default=False, help="Resume training from checkpoint.")
+parser.add_argument("--show_axes", action="store_true", help="Show the object's rotating coordinate axes.")
 # append AppLauncher cli args
 AppLauncher.add_app_launcher_args(parser)
 args_cli, hydra_args = parser.parse_known_args()
@@ -74,6 +75,7 @@ def main(env_cfg: DirectRLEnvCfg, agent_cfg: dict):
     env_cfg.randomize_joint_pos_offset = False
     env_cfg.sim.gravity = (0, 0, -9.81)
     env_cfg.gravity_curriculum = False
+    env_cfg.debug_show_axes = args_cli.show_axes
     env_cfg.grasp_cache_path = args_cli.cache if args_cli.cache is not None else env_cfg.grasp_cache_path
     config = ConfigWrapper(agent_cfg, env_cfg, test=True)
 

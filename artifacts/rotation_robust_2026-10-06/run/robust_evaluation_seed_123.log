@@ -1,0 +1,157 @@
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /home/tim/.holosoma_deps/IsaacLab/apps/isaacsim_4_5/isaaclab.python.headless.kit
+[Warning] [simulation_app.simulation_app] Modules: ['omni.kit_app'] were loaded before SimulationApp was started and might not be loaded correctly.
+[Warning] [simulation_app.simulation_app] Please check to make sure no extra omniverse or pxr modules are imported before the call to SimulationApp(...)
+Loading user config located at: '/home/tim/miniconda3/envs/sharpa-rl/lib/python3.10/site-packages/omni/data/Kit/Isaac-Sim/4.5/user.config.json'
+[Info] [carb] Logging to file: /home/tim/miniconda3/envs/sharpa-rl/lib/python3.10/site-packages/omni/logs/Kit/Isaac-Sim/4.5/kit_20261006_125942.log
+2026-10-06 04:59:42 [0ms] [Warning] [omni.kit.app.plugin] No crash reporter present, dumps uploading isn't available.
+2026-10-06 04:59:42 [1ms] [Warning] [omni.ext.plugin] [ext: rendering_modes] Extensions config 'extension.toml' doesn't exist '/home/tim/.holosoma_deps/IsaacLab/apps/isaacsim_4_5/rendering_modes' or '/home/tim/.holosoma_deps/IsaacLab/apps/isaacsim_4_5/rendering_modes/config'
+2026-10-06 04:59:42 [74ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-10-06 04:59:42 [261ms] [Warning] [omni.datastore] OmniHub is inaccessible
+2026-10-06 04:59:42 [315ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 580.178.04    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 3060          | Yes: 0 |     | 12534   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2504      | 70dd1ba2.. |
+|     |                                  |        |     |            | 1         |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.8.0-117-generic
+| XServer Vendor: The X.Org Foundation, XServer Version: 12101004 (1.21.1.4)
+| Processor: Intel(R) Core(TM) i5-14600K
+| Cores: 14 | Logical Cores: 20
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 64109 | Free Memory: 58726
+| Total Page/Swap (MB): 0 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-10-06 04:59:46 [3,462ms] [Warning] [gpu.foundation.plugin] IOMMU is enabled.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[INFO]: Parsing configuration from: rl_isaaclab.tasks.inhand_rotate.sharpa_wave_env_cfg:SharpaWaveEnvCfg
+[INFO]: Parsing configuration from: /home/tim/hand/sharpa/sharpa-rl-lab/rl_isaaclab/tasks/inhand_rotate/agents/ppo_cfg.yaml
+Setting seed: 123
+2026-10-06 04:59:46 [4,117ms] [Warning] [isaaclab.sim.utils] [Compat] Isaac Sim < 5.0 does not support thread-local stage contexts. Skipping use_stage().
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : 123
+	Physics step-size     : 0.004166666666666667
+	Rendering step-size   : 0.008333333333333333
+	Environment step-size : 0.05
+2026-10-06 04:59:46 [4,119ms] [Warning] [isaaclab.envs.direct_rl_env] The render interval (2) is smaller than the decimation (12). Multiple render calls will happen for each environment step.If this is not intended, set the render interval to be equal to the decimation.
+2026-10-06 04:59:46 [4,119ms] [Warning] [isaaclab.sim.utils] [Compat] Isaac Sim < 5.0 does not support thread-local stage contexts. Skipping use_stage().
+2026-10-06 04:59:48 [5,822ms] [Warning] [isaaclab.sim.utils] [Compat] Isaac Sim < 5.0 does not support thread-local stage contexts. Skipping use_stage().
+2026-10-06 04:59:48 [5,866ms] [Warning] [isaaclab.scene.interactive_scene] Collision filtering can only be automatically enabled when replicate_physics=True and using GPU simulation. Please call scene.filter_collisions(global_prim_paths) to filter collisions across environments.
+[INFO]: Time taken for scene creation : 1.768457 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 64
+	Environment spacing   : 0.75
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+2026-10-06 04:59:48 [5,889ms] [Warning] [isaaclab.sim.utils] [Compat] Isaac Sim < 5.0 does not support thread-local stage contexts. Skipping use_stage().
+2026-10-06 04:59:49 [6,648ms] [Warning] [isaaclab.assets.articulation.articulation] Spatial tendons are not supported in Isaac Sim < 5.0: patching spatial-tendon getter and setter to use dummy value
+[INFO]: Time taken for simulation start : 0.930920 seconds
+[INFO] Event Manager:  <EventManager> contains 1 active terms.
++----------------------------------------+
+| Active Event Terms in Mode: 'prestartup' |
++-----------+----------------------------+
+|   Index   | Name                       |
++-----------+----------------------------+
+|     0     | randomize_scale            |
++-----------+----------------------------+
+
+[INFO]: Completed setting up the environment...
+RunningMeanStd:  (192,)
+RunningMeanStd:  (1,)
+Evaluating logs/rotation_finetune/2026-09-25_23-24-22/stage1_nn/best.pth
+{
+  "checkpoint": "logs/rotation_finetune/2026-09-25_23-24-22/stage1_nn/best.pth",
+  "steps": 1000,
+  "num_envs": 64,
+  "seed": 123,
+  "gravity_z_m_s2": -9.81,
+  "dynamics_randomization": {
+    "pd_gains": true,
+    "center_of_mass": true,
+    "mass": true
+  },
+  "completed_episodes": 146,
+  "height_terminations": 24,
+  "timeouts": 122,
+  "timeout_fraction": 0.8356164383561644,
+  "full_rotation_and_hold": 116,
+  "full_rotation_and_hold_fraction": 0.7945205479452054,
+  "mean_net_rotations_per_episode": 2.735935931333823,
+  "mean_episode_reward": 313.761320991263,
+  "mean_episode_steps": 350.02054794520546,
+  "mean_step_reward": 0.9046005606651306,
+  "mean_rewarded_target_angular_velocity_rad_s": 0.4173141121864319,
+  "mean_yaw_velocity_rad_s": 0.9862778782844543,
+  "mean_integrated_yaw_velocity_rad_s": 0.9834991097450256,
+  "mean_position_reward_per_step": 0.0903148278594017,
+  "mean_rotation_reward_per_step": 1.043285608291626
+}
+Evaluating logs/rotation_robust/2026-10-06_11-31-08/stage1_nn/best.pth
+{
+  "checkpoint": "logs/rotation_robust/2026-10-06_11-31-08/stage1_nn/best.pth",
+  "steps": 1000,
+  "num_envs": 64,
+  "seed": 123,
+  "gravity_z_m_s2": -9.81,
+  "dynamics_randomization": {
+    "pd_gains": true,
+    "center_of_mass": true,
+    "mass": true
+  },
+  "completed_episodes": 139,
+  "height_terminations": 12,
+  "timeouts": 127,
+  "timeout_fraction": 0.9136690647482014,
+  "full_rotation_and_hold": 126,
+  "full_rotation_and_hold_fraction": 0.9064748201438849,
+  "mean_net_rotations_per_episode": 3.2187680189241528,
+  "mean_episode_reward": 405.8329652685056,
+  "mean_episode_steps": 367.2589928057554,
+  "mean_step_reward": 1.0876861810684204,
+  "mean_rewarded_target_angular_velocity_rad_s": 0.4558367431163788,
+  "mean_yaw_velocity_rad_s": 1.0980732440948486,
+  "mean_integrated_yaw_velocity_rad_s": 1.0958346128463745,
+  "mean_position_reward_per_step": 0.10524112731218338,
+  "mean_rotation_reward_per_step": 1.139592170715332
+}
+Evaluating logs/rotation_robust/2026-10-06_11-31-08/stage1_nn/last.pth
+{
+  "checkpoint": "logs/rotation_robust/2026-10-06_11-31-08/stage1_nn/last.pth",
+  "steps": 1000,
+  "num_envs": 64,
+  "seed": 123,
+  "gravity_z_m_s2": -9.81,
+  "dynamics_randomization": {
+    "pd_gains": true,
+    "center_of_mass": true,
+    "mass": true
+  },
+  "completed_episodes": 144,
+  "height_terminations": 18,
+  "timeouts": 126,
+  "timeout_fraction": 0.875,
+  "full_rotation_and_hold": 120,
+  "full_rotation_and_hold_fraction": 0.8333333333333334,
+  "mean_net_rotations_per_episode": 3.092732500724606,
+  "mean_episode_reward": 383.0254687724842,
+  "mean_episode_steps": 357.1666666666667,
+  "mean_step_reward": 1.078892469406128,
+  "mean_rewarded_target_angular_velocity_rad_s": 0.44308939576148987,
+  "mean_yaw_velocity_rad_s": 1.0961540937423706,
+  "mean_integrated_yaw_velocity_rad_s": 1.0933235883712769,
+  "mean_position_reward_per_step": 0.10773620009422302,
+  "mean_rotation_reward_per_step": 1.1077229976654053
+}
+Saved comparison to logs/rotation_robust/2026-10-06_11-31-08/robust_comparison_seed_123.json
